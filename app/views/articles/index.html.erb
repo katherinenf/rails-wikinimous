@@ -1,0 +1,9 @@
+<div class="m-3">
+  <ul>
+    <% @articles.each do |article|%>
+    <h3> <%= article.title %></h3>
+    <p> <%= article.content %></p>
+    <% end %>
+  </ul>
+    <%= link_to 'New Post', new_article_path%>
+</div>
